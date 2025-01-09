@@ -9,5 +9,11 @@ type SchoolItemProps = {
 export const SchoolItem = ({
     school
 }: SchoolItemProps) => {
-    return <li className='school-item'>{school.name}</li>
+    return (
+        <tr>
+            <td>{school.name}</td>
+            <td>{school.average_student_gpa}</td>
+        </tr>
+    )
+     
 }
